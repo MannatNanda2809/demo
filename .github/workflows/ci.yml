@@ -8,5 +8,9 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say hello
-        run: echo "Hello from a GitHub-hosted runner (cloud VM)!"
+      - name: Show system info
+        run: |
+          echo "Hello from GitHub"
+          uname -a
+          pwd
+          ls -la
